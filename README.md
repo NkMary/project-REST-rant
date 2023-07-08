@@ -23,7 +23,7 @@ Node Modules: method-override, dotenv, express-react-views
 | DELETE | /places/:id/rant/:rantid | Delet a rant (comment) about a particular place |
 | GET | * | 404 page (matches any route not defined above) |
 
-# Database
+## Database
 | Field  | Type|
 | ------------- | ------------- |
 | _id | Object ID  |
