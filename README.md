@@ -2,9 +2,16 @@
 
 REST-Rant is an app where users can review restaurants.
 
+##Tech Usage
+CSS Framework: Bootstrap
+Stack: MongoDB, Express, NodeJS
+Server-Side Rendering JSX
+Node Modules: method-override, dotenv, express-react-views
+
+##
 | Method | Path | Purpose |
-| --- | --- |
-| GET | / | Home page |
+| --------- | --------- | ----------- |
+| GET | / | Home page | 
 | GET | /places| Places index page |
 | POST | /places | Create new place |
 | GET | /places/new | Form page for creating a new place |
@@ -15,3 +22,13 @@ REST-Rant is an app where users can review restaurants.
 | POST | /places/:id/rant | Create a rant (comment) about a particular place|
 | DELETE | /places/:id/rant/:rantid | Delet a rant (comment) about a particular place |
 | GET | * | 404 page (matches any route not defined above) |
+
+##Database
+| Field  | Type|
+| ------------- | ------------- |
+| _id | Object ID  |
+| name  | String |
+| city | String |
+| state | String |
+| cuisines | String |
+| pic | String |
