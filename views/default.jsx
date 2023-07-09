@@ -1,10 +1,10 @@
-const React = require ('react')
+const React = require('react')
 
 function Def (html) {
     return (
         <html>
             <head>
-                <title>Title</title>
+                <title>Rest Rant Live <Demo></Demo></title>
             </head>
             <body>
                 {html.children}
