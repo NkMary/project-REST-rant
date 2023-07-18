@@ -11,7 +11,7 @@ function show (data) {
                     <h3>
                         Located in {data.place.city}, {data.place.state}
                     </h3>
-                    <a href="{`/places/${data.id}/edit`}" className="btn btn-warning"> 
+                    <a href={`/places/${data.id}/edit`} className="btn btn-warning"> 
                         Edit
                     </a>  
                     <form method="POST" action={`/places/${data.id}?_method=DELETE`}> 

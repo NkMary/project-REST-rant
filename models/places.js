@@ -1,13 +1,12 @@
-    module.exports = [{
-        name: 'Salad Delish',
-        city: 'Seattle',
-        state: 'WA',
-        cuisines: 'Vegan, Vegetarian',
-        pic: '/images/salad.jpg'
-    }, {
-        name: 'Personal Pizza',
-        city: 'Bronx',
-        state: 'NY',
-        cuisines: 'pizza, italian',
-        pic: '/images/pizza.jpg'
-    }]
+const mongoose = require('mongoose')
+
+const placeSchema = new mongoose.Schema({
+  name: { type: String, required: true },
+  pic: String,
+  cuisines: { type: String, required: true },
+  city: { type: String, default: 'Anytown' },
+  state: { type: String, default: 'USA' },
+  founded: Number
+})
+
+module.exports = mongoose.model ('Place', placeSchema)
