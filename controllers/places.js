@@ -14,24 +14,24 @@ router.get('/', (req, res) => {
 })
 
 //CREATE
-router.post('/', (req, res) => {
-  db.Place.create(req.body)
-  .then(() => {
-      res.redirect('/places')
+router.post('/:id/comment', (req, res) => {
+  console.log(req.body)
+  db.Place.findById(req.params.id)
+  .then(place => {
+      db.Comment.create(req.body)
+      .then(comment => {
+          place.comments.push(comment.id)
+          place.save()
+          .then(() => {
+              res.redirect(`/places/${req.params.id}`)
+          })
+      })
+      .catch(err => {
+          res.render('error404')
+      })
   })
   .catch(err => {
-    if (err && err.name == 'ValidationError') {
-      let message = 'Validation Error: '
-      for (var field in err.errors) {
-          message += `${field} was ${err.errors[field].value}. `
-          message += `${err.errors[field].message}`
-      }
-      console.log('Validation error message', message)
-      res.render('places/new', { message })
-  }
-  else {
       res.render('error404')
-  }
   })
 })
 

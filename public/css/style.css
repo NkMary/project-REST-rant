@@ -40,6 +40,18 @@ body {
 main {
   margin-right: 20px;
   margin-left: 20px;
+  padding: 20px;
   background-color: white;
 }
 
+form {
+  display: inline;
+}
+
+.inactive {
+  color: gray;
+}
+
+.border {
+  border: 1px solid gray;
+}
