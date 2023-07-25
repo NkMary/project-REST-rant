@@ -35,7 +35,6 @@ router.post('/:id/comment', (req, res) => {
   })
 })
 
-
 //NEW
 router.get('/new', (req, res) => {
   res.render('places/new')
@@ -95,9 +94,9 @@ router.post('/:id/rant', (req, res) => {
   res.send('GET /places/:id/rant stub')
 })
 
-//router.delete('/:id/rant/:rantId', (req, res) => {
-    //res.send('GET /places/:id/rant/:rantId stub')
-//})
+router.delete('/:id/rant/:rantId', (req, res) => {
+  res.send('GET /places/:id/rant/:rantId stub')
+})
 
 module.exports = router
 
