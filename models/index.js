@@ -7,5 +7,8 @@ mongoose.connect(process.env.MONGO_URI, {
   useUnifiedTopology: true
 })
 
+.then(res => console.log("connected at:", process.env.MONGO_URI))
+  .catch(err => console.log(err))
+
 module.exports.Place = require('./places')
 module.exports.comment = require('./comment')

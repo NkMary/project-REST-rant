@@ -17,6 +17,11 @@ const placeSchema = new mongoose.Schema({
 placeSchema.methods.showEstablished = function() {
     return `${this.name} has been serving ${this.city}, ${this.state} since ${this.founded}.`
   }
+
+placeSchema.pre('save', async function() {
+  const allComments = await Promise.all(this.comments.map(async id => await Comment.findById(id).select('stars')))
+  this.rating = allComments.reduce((acc,cur)=>acc+cur.stars,0) / allComments.length
+  })
   
 
 module.exports = mongoose.model ('Place', placeSchema)
