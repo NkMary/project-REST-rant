@@ -33,7 +33,7 @@ const main = async () => {
     }
 
     // clears out the existing database
-    await db.Place.deleteMany({})
+    //await db.Place.deleteMany({})
     
     let createdPlaces
 

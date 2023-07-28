@@ -7,14 +7,11 @@ function home () {
             <main>
                 <h1>REST-Rant</h1>
                 <div>
-                    <img src="/images/kebab.jpg" alt="grilled chicken kebab" />
+                    <img src="/images/woman.jpg" alt="woman sitting at a table in front of food" />
                     <div>
-                    Photo by <a href="https://unsplash.com/@victoriakosmo?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Victoria Shes</a> on <a href="https://unsplash.com/images/food?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                    Photo by <a href="https://unsplash.com/@iamophb?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ophélie Bonavita</a> on <a href="https://unsplash.com/s/photos/african-restaurant?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
                     </div>
                 </div>
-                <a href="/places">
-                    <button className="btn-primary">Places Page</button>
-                </a>
             </main>
         </Def>
     )
