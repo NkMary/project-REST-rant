@@ -27,13 +27,13 @@ const createPlace = () => {
 const main = async () => {
 
     // creates 400 random places
-    const randoPlaces = []
+    const randoPlaces = [10]
     for (let i=0; i < 10; i++) {
         randoPlaces.push(createPlace())
     }
 
     // clears out the existing database
-    //await db.Place.deleteMany({})
+    await db.Place.deleteMany({})
     
     let createdPlaces
 

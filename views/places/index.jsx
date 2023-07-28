@@ -23,7 +23,7 @@ function index (data) {
     return (
       <Def title={'All Places: RESTRant'}>
           <main>
-              <h1>Places to Rant or Rave About</h1>
+              <h1>African Places to Rant or Rave About</h1>
               <a href="/places/new">
                 <button classname="btn btn-primary">Add a new place</button>
               </a>
