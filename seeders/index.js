@@ -28,7 +28,7 @@ const main = async () => {
 
     // creates 400 random places
     const randoPlaces = []
-    for (let i=0; i < 400; i++) {
+    for (let i=0; i < 10; i++) {
         randoPlaces.push(createPlace())
     }
 
