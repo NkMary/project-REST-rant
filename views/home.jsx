@@ -5,7 +5,7 @@ function home () {
     return (
         <Def>
             <main>
-                <h1>REST-Rant</h1>
+                <h1>African REST-Rant</h1>
                 <div>
                     <img src="/images/woman.jpg" alt="woman sitting at a table in front of food" />
                     <div>
